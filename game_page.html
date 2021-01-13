@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Quiz - Game Page</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<span><h4 id = "player1_name"></h4></span> <span id="player1_score"></span>
+<br>
+<span><h4 id = "player2_name"></h4></span> <span id = "player2_score"></span>
+<div class = "container">
+    <center>
+        <h2 style="color: white">Aayans Brain Testing Math Quiz !</h2>
+            <h4 id = "questionTurn"></h4>
+            <h4 id = "answerTurn"></h4>
+        <div id="output" class="col-lg-6">
+            <h2 id = "displayQuestion"></h2>
+    
+        </div> 
+        <br>
+        <br>
+        <label>Please input your two numbers Below. ----><b style = "color: red">Make sure you are inputting the right number!</b> <----</label>
+        <input id = "inputN1" type="text" class = "form-control" placeholder = "Enter number">
+        <br>
+        <input id = "inputN2" type="text" class = "form-control" placeholder = "Enter number">
+        <br>
+        <button id="sendButton" class = "btn btn-success" style = "width: 30%" onclick = "send()">Send your number!</button>
+    </center>
+</div>
+<script src="game_page.js"></script>
+</body>
